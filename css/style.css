@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.title-background {
+    position: relative;
+    text-align: center;
+    color: #fff; /* Warna teks */
+    font-size: 24px; /* Ukuran teks */
+    z-index: 1;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.title-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: #044271cf; /* Warna latar belakang */
+    z-index: -1;
+}
+
+
+.calculator {
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #0074cc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 50px auto;
+    position: relative; /* Tambahkan properti position */
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #0074cc;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+button:last-child {
+    margin-right: 0;
+}
+
+button:hover {
+    background-color: #0056a9;
+}
+
+#reset {
+    background-color: #ff5722;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+#reset:hover {
+    background-color: #f44336;
+}
+
+#resultArea, #resultPerimeter {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #0074cc;
+}
